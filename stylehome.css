@@ -183,10 +183,20 @@ footer:hover {
     transform: scale(1.1) rotate(10deg);
 }
 
-@media only screen and (max-width: 1000px) {
- 
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .menu-ham {
         display: block;
+        font-size: 3rem;
+        align-self: center;
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .buttons-header {
@@ -207,50 +217,150 @@ footer:hover {
         display: flex;
     }
 
+    .foto-header {
+        width: 100px;
+    }
+
     .slogan {
         font-size: 2rem;
-        margin: 10px auto; 
+        margin: 10px auto;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .foto-uade {
+        width: 400px;
+    }
+
+    .home-card {
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .salud-image {
+        width: 250px;
     }
 }
 
-@media(max-width:800px) {
+@media (max-width: 800px) {
     *{
         font-size: 0.9rem;
     }
+    
     .header {
         flex-direction: column;
         align-items: center;
     }
+
     .buttons-header {
-        justify-content: space-around;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f8f8f8;
         width: 100%;
-        gap: 10px;        
+        position: absolute;
+        top: 160px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
     }
-    .foto-header{
-        width: 140px;
+
+    .buttons-header.active {
+        display: flex;
     }
-    .foto-uade{
-        width: 380px;
+
+    .foto-header {
+        width: 100px;
     }
-    .salud-image{
-        width: 240px;
+
+    .slogan {
+        font-size: 1.2rem;
+        margin: 10px auto;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .foto-uade {
+        width: 300px;
+    }
+
+    .home-card {
+        gap: 20px;
+    }
+
+    .salud-image {
+        width: 180px;
+    }
+
+    .text-card {
+        font-size: 1rem;
+        gap: 20px;
     }
 }
 
-
-@media only screen and (max-width: 600px) {
+@media (max-width: 480px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu-ham {
+        font-size: 2rem;
     }
 
     .buttons-header {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background-color: #f8f8f8;
         width: 100%;
-        justify-content: center;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        padding: 5px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
     }
 
-    .buttons-header button {
-        width: 100%;
-        text-align: center;
+    .buttons-header.active {
+        display: flex;
+    }
+
+    .foto-header {
+        width: 60px;
+    }
+
+    .slogan {
+        font-size: 1rem;
+        margin: 5px auto;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .foto-uade {
+        width: 200px;
+    }
+
+    .home-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .salud-image {
+        width: 150px;
+    }
+
+    .text-card {
+        font-size: 0.9rem;
+        gap: 10px;
     }
 }

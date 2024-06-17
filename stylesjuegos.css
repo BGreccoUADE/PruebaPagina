@@ -168,7 +168,7 @@ body {
 }
 
 .games .description a {
-    color: #3498db;
+    color: #2421C9;
     text-decoration: none;
     font-weight: bold;
 }
@@ -314,10 +314,6 @@ footer:hover {
 
     .intro h1 {
         font-size: 2rem;
-    }
-
-    .intro img {
-        width: 90px;
     }
 
     .games .game {
